@@ -1,0 +1,19 @@
+{
+  "id": "7WONDERS",
+  "name": "Victoria's Bucket List",
+  "short_name": "Victoria's Bucket List",
+  "scope": "./",
+  "start_url": "./",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#33CC66",
+  "icons": [
+    {
+      "src": "profile.png",
+      "sizes": "any",
+      "type": "image/avif"
+    }
+  ],
+  "app_name": "Victoria's Bucket List",
+  "description": "Meu checklist de lugares incríveis que quero conhecer! 🌍✨"
+}

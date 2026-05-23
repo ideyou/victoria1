@@ -1,0 +1,149 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tela cheia */
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+/* Centralização */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    position: relative;
+    overflow: hidden;
+}
+
+/* ===== FUNDO DIA ===== */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    background: url("pontosturisticos.png") center/cover no-repeat;
+
+    z-index: -2;
+}
+
+/* ===== FUNDO NOITE ===== */
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    background: url("pontosturisticosnoite.png") center/cover no-repeat;
+
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+
+    z-index: -1;
+}
+
+/* Ativa modo noite */
+body.dark-mode::after {
+    opacity: 1;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+    width: 350px;
+    padding: 30px;
+
+    background: #ffffffbb;
+    border-radius: 25px;
+
+    text-align: center;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+/* ===== AVATAR ===== */
+.avatar {
+    width: 130px;
+    height: 130px;
+
+    border-radius: 50%;
+    object-fit: cover;
+
+    border: 4px solid #fff;
+
+    margin-bottom: 15px;
+}
+
+/* ===== TÍTULO ===== */
+.title {
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+/* ===== SUBTÍTULO ===== */
+.subtitle {
+    color: rgba(39, 39, 39, 0.9);
+    margin-bottom: 25px;
+}
+
+/* ===== LINKS ===== */
+.links {
+    width: 100%;
+}
+
+/* ===== BOTÕES ===== */
+.btn {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+
+    border: none;
+    border-radius: 12px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    text-align: center;
+    text-decoration: none;
+
+    background: linear-gradient(135deg, #660a0a, #a02121);
+    color: white;
+
+    cursor: pointer;
+    display: block;
+
+    transition: all 0.25s ease;
+}
+
+/* Hover */
+.btn:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+}
+
+/* Clique */
+.btn:active {
+    transform: scale(0.97);
+}
+/*aviao - cursor 
+body {
+    cursor: url("cursor.png") 16 16, auto;
+}
+
+.btn:hover {
+    cursor: url("cursor.png") 16 16, pointer;
+}
+*/
