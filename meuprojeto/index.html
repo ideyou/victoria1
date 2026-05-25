@@ -19,7 +19,12 @@
         </div>
         <img class="cover-emblem" src="repubblica-italiana.png" alt="Emblema della Repubblica Italiana">
         <h1>PASSAPORTO</h1>
-        <div class="passport-chip" role="img" aria-label="Ícone de chip do passaporte"></div>
+        <div class="passport-chip" role="img" aria-label="Ícone de chip do passaporte">
+          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path fill="currentColor" d="M4 4a2 2 0 0 0-2 2v5h6.13c.46-1.76 2.05-3 3.87-3a4.01 4.01 0 0 1 3.87 3H22V6a2 2 0 0 0-2-2zm8 6a2 2 0 0 0-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2M2 13v5a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5h-6.13A4.01 4.01 0 0 1 12 16a4.01 4.01 0 0 1-3.87-3z" />
+          </svg>
+        </div>
       </article>
 
       <article class="passport-page passport-spread" data-page="1" aria-hidden="true" inert>
@@ -29,19 +34,29 @@
             <strong>Pagina 01</strong>
           </header>
           <div class="world-map">
-            <svg viewBox="0 0 420 220" role="img" aria-labelledby="world-title">
-              <title id="world-title">Mapa mundi desenhado</title>
-              <path d="M65 79c18-31 55-42 91-35 17 4 25 18 15 31-13 16-39 11-50 26-8 11 1 27-11 38-14 12-46 4-55-17-5-12 2-28 10-43Z"/>
-              <path d="M165 128c18 3 31 12 36 29 4 13-1 28-13 35-15 9-32 1-39-14-8-17-1-37 16-50Z"/>
-              <path d="M225 55c23-17 69-23 96-8 25 15 13 42-12 45-20 2-26 12-18 25 8 12 32 12 40 29 8 18-14 34-35 31-22-3-23-24-39-34-15-10-38-3-48-18-14-21-3-55 16-70Z"/>
-              <path d="M337 124c26-2 42 15 35 35-7 19-36 23-50 8-13-14-3-39 15-43Z"/>
-              <path d="M34 188h353"/>
+            <svg viewBox="0 0 640 330" role="img" aria-labelledby="world-title">
+              <title id="world-title">Mapa mundi pontilhado</title>
+              <defs>
+                <pattern id="world-dot-pattern" width="8" height="8" patternUnits="userSpaceOnUse">
+                  <circle cx="2.5" cy="2.5" r="1.7" />
+                </pattern>
+              </defs>
+              <g fill="url(#world-dot-pattern)">
+                <path d="M30 117c17-28 46-36 75-27 19 6 30-12 49-10 20 2 32 17 49 23 19 6 41-4 55 11 15 15 2 36-14 42-20 8-28 26-31 45-5 28-19 49-44 63-21-20-19-47-28-72-8-22-26-25-47-28-25-3-55-15-64-47Z"/>
+                <path d="M113 58c20-17 54-24 83-13 21 8 39 4 57 12-21 19-54 24-82 16-22-7-41-4-58-15Z"/>
+                <path d="M213 211c21 4 35 18 39 39 4 22-7 44-19 62-9-23-28-37-40-57-12-21-2-41 20-44Z"/>
+                <path d="M294 102c18-18 48-23 74-18 15 3 27 10 42 6 18-5 34-18 54-19 38-3 72 16 109 14 14-1 28-8 41-2-9 21-35 28-52 41-15 11-17 31-31 42-15 11-38 2-54 12-17 11-10 36-27 48-16 12-37-1-48-14-15-17-31-25-54-22-21 3-40 2-53-17-15-22-20-50-1-71Z"/>
+                <path d="M337 159c24 5 41 25 45 49 4 28-9 55-23 78-26-17-42-45-41-75 0-22 4-43 19-52Z"/>
+                <path d="M508 207c31-11 70 5 83 36-19 17-56 18-78 4-15-9-21-29-5-40Z"/>
+                <path d="M568 266c12 2 22 9 28 19-11 6-24 8-36 2 0-8 3-15 8-21Z"/>
+                <path d="M413 50c27-15 71-17 99-3-29 14-70 17-99 3Z"/>
+              </g>
             </svg>
           </div>
-          <div class="dotted-number">VCT 04 25 777</div>
+          <div class="dotted-number">VOAC 270511</div>
           <div class="mrz">
             <span>P&lt;ITA&lt;&lt;COSTA&lt;&lt;VICTORIA&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;</span>
-            <span>VCT0425777ITA2605257F3405257&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;08</span>
+            <span>VOAC270511ITA2605257F3405257&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;08</span>
           </div>
           <span class="page-number">01</span>
         </section>
@@ -60,7 +75,7 @@
               </div>
               <div>
                 <dt>Nacionalidade</dt>
-                <dd>Brasileira</dd>
+                <dd>Italiana</dd>
               </div>
               <div>
                 <dt>Documento</dt>
@@ -68,7 +83,7 @@
               </div>
               <div>
                 <dt>Número</dt>
-                <dd>VCT 0425777</dd>
+                <dd>VOAC 270511</dd>
               </div>
               <div>
                 <dt>Autoridade</dt>
@@ -86,13 +101,15 @@
       </article>
 
       <article class="passport-page passport-spread" data-page="2" aria-hidden="true" inert>
-        <section class="sheet left-sheet city-page" data-city="pisa">
-          <header class="page-header"><span>Itália</span><strong>Pagina 03</strong></header>
-          <div class="city-sketch"><span>Torre inclinada</span></div>
-          <div class="passport-stamp"><span>Pisa</span><small>Visitada</small></div>
-          <h2>Pisa</h2>
-          <p>A torre inclinada abre a parte de cidades com um traço clássico italiano.</p>
-          <button type="button" class="stamp-button" data-city="pisa" aria-pressed="false">Carimbar Pisa</button>
+        <section class="sheet left-sheet city-page" data-city="paris">
+          <header class="page-header"><span>França</span><strong>Pagina 03</strong></header>
+          <div class="city-sketch city-photo-frame">
+            <img class="city-photo" src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=900&q=80" alt="Torre Eiffel em Paris">
+            <span>Tour Eiffel</span>
+          </div>
+          <div class="passport-stamp"><span>Paris</span><small>Visitada</small></div>
+          <h2>Paris</h2>
+          <p>A Torre Eiffel abre a parte de cidades com um clássico francês.</p>
           <span class="page-number">03</span>
         </section>
         <section class="sheet right-sheet city-page" data-city="roma">
@@ -101,7 +118,6 @@
           <div class="passport-stamp"><span>Roma</span><small>Visitada</small></div>
           <h2>Roma</h2>
           <p>Uma página de ruínas, fontes e ruas antigas no coração da Itália.</p>
-          <button type="button" class="stamp-button" data-city="roma" aria-pressed="false">Carimbar Roma</button>
           <span class="page-number">04</span>
         </section>
       </article>
@@ -113,7 +129,6 @@
           <div class="passport-stamp"><span>Veneza</span><small>Visitada</small></div>
           <h2>Veneza</h2>
           <p>Gôndolas, pontes e água desenhadas como um carimbo de filme.</p>
-          <button type="button" class="stamp-button" data-city="veneza" aria-pressed="false">Carimbar Veneza</button>
           <span class="page-number">05</span>
         </section>
         <section class="sheet right-sheet city-page" data-city="florenca">
@@ -122,7 +137,6 @@
           <div class="passport-stamp"><span>Florença</span><small>Visitada</small></div>
           <h2>Florença</h2>
           <p>Uma página para arte, cúpulas e o clima renascentista da Toscana.</p>
-          <button type="button" class="stamp-button" data-city="florenca" aria-pressed="false">Carimbar Florença</button>
           <span class="page-number">06</span>
         </section>
       </article>
@@ -134,7 +148,6 @@
           <div class="passport-stamp"><span>Brasília</span><small>Visitada</small></div>
           <h2>Brasília</h2>
           <p>Linhas modernas, céu grande e arquitetura de cartão postal brasileiro.</p>
-          <button type="button" class="stamp-button" data-city="brasilia" aria-pressed="false">Carimbar Brasília</button>
           <span class="page-number">07</span>
         </section>
         <section class="sheet right-sheet city-page" data-city="buzios">
@@ -143,7 +156,6 @@
           <div class="passport-stamp"><span>Búzios</span><small>Visitada</small></div>
           <h2>Búzios</h2>
           <p>Mar, barcos e uma cidade praiana com cara de descanso.</p>
-          <button type="button" class="stamp-button" data-city="buzios" aria-pressed="false">Carimbar Búzios</button>
           <span class="page-number">08</span>
         </section>
       </article>
@@ -155,7 +167,6 @@
           <div class="passport-stamp"><span>Trancoso</span><small>Visitada</small></div>
           <h2>Trancoso</h2>
           <p>Casinhas coloridas, praia e uma página com alma de verão.</p>
-          <button type="button" class="stamp-button" data-city="trancoso" aria-pressed="false">Carimbar Trancoso</button>
           <span class="page-number">09</span>
         </section>
         <section class="sheet right-sheet city-page" data-city="frankfurt">
@@ -164,7 +175,6 @@
           <div class="passport-stamp"><span>Frankfurt</span><small>Visitada</small></div>
           <h2>Frankfurt</h2>
           <p>Arranha-céus, pontes e um toque financeiro no passaporte.</p>
-          <button type="button" class="stamp-button" data-city="frankfurt" aria-pressed="false">Carimbar Frankfurt</button>
           <span class="page-number">10</span>
         </section>
       </article>
@@ -176,7 +186,6 @@
           <div class="passport-stamp"><span>Berlim</span><small>Visitada</small></div>
           <h2>Berlim</h2>
           <p>História, arte urbana e o Portão de Brandemburgo em traços simples.</p>
-          <button type="button" class="stamp-button" data-city="berlim" aria-pressed="false">Carimbar Berlim</button>
           <span class="page-number">11</span>
         </section>
         <section class="sheet right-sheet city-page" data-city="new-york">
@@ -185,7 +194,6 @@
           <div class="passport-stamp"><span>NYC</span><small>Visitada</small></div>
           <h2>New York</h2>
           <p>Uma cidade vertical com luzes, pontes e ritmo de filme.</p>
-          <button type="button" class="stamp-button" data-city="new-york" aria-pressed="false">Carimbar New York</button>
           <span class="page-number">12</span>
         </section>
       </article>
@@ -197,7 +205,6 @@
           <div class="passport-stamp"><span>LA</span><small>Visitada</small></div>
           <h2>Los Angeles</h2>
           <p>Sol, cinema e palmeiras numa página bem costa oeste.</p>
-          <button type="button" class="stamp-button" data-city="los-angeles" aria-pressed="false">Carimbar Los Angeles</button>
           <span class="page-number">13</span>
         </section>
         <section class="sheet right-sheet city-page" data-city="londres">
@@ -206,7 +213,6 @@
           <div class="passport-stamp"><span>Londres</span><small>Visitada</small></div>
           <h2>Londres</h2>
           <p>Chuva fina, relógio famoso e uma página de clássicos britânicos.</p>
-          <button type="button" class="stamp-button" data-city="londres" aria-pressed="false">Carimbar Londres</button>
           <span class="page-number">14</span>
         </section>
       </article>
@@ -218,7 +224,6 @@
           <div class="passport-stamp"><span>Edimburgo</span><small>Visitada</small></div>
           <h2>Edimburgo</h2>
           <p>Castelo, pedra antiga e aquele clima de cidade misteriosa.</p>
-          <button type="button" class="stamp-button" data-city="edimburgo" aria-pressed="false">Carimbar Edimburgo</button>
           <span class="page-number">15</span>
         </section>
         <section class="sheet right-sheet city-page" data-city="barcelona">
@@ -227,7 +232,6 @@
           <div class="passport-stamp"><span>Barcelona</span><small>Visitada</small></div>
           <h2>Barcelona</h2>
           <p>Gaudí, mosaicos e uma página colorida mesmo em tinta de passaporte.</p>
-          <button type="button" class="stamp-button" data-city="barcelona" aria-pressed="false">Carimbar Barcelona</button>
           <span class="page-number">16</span>
         </section>
       </article>
@@ -239,7 +243,6 @@
           <div class="passport-stamp"><span>Lisboa</span><small>Visitada</small></div>
           <h2>Lisboa</h2>
           <p>Azulejos, miradouros e o elétrico subindo pelas ladeiras.</p>
-          <button type="button" class="stamp-button" data-city="lisboa" aria-pressed="false">Carimbar Lisboa</button>
           <span class="page-number">17</span>
         </section>
         <section class="sheet right-sheet city-page" data-city="moscou">
@@ -248,7 +251,6 @@
           <div class="passport-stamp"><span>Moscou</span><small>Visitada</small></div>
           <h2>Moscou</h2>
           <p>Cúpulas, inverno e uma cidade monumental para a coleção.</p>
-          <button type="button" class="stamp-button" data-city="moscou" aria-pressed="false">Carimbar Moscou</button>
           <span class="page-number">18</span>
         </section>
       </article>
@@ -260,7 +262,6 @@
           <div class="passport-stamp"><span>Tóquio</span><small>Visitada</small></div>
           <h2>Tóquio</h2>
           <p>Neon, templos e uma mistura linda de futuro com tradição.</p>
-          <button type="button" class="stamp-button" data-city="toquio" aria-pressed="false">Carimbar Tóquio</button>
           <span class="page-number">19</span>
         </section>
         <section class="sheet right-sheet city-page" data-city="bangkok">
@@ -269,7 +270,6 @@
           <div class="passport-stamp"><span>Bangkok</span><small>Visitada</small></div>
           <h2>Bangkok</h2>
           <p>Templos dourados, mercados e energia asiática para fechar o roteiro.</p>
-          <button type="button" class="stamp-button" data-city="bangkok" aria-pressed="false">Carimbar Bangkok</button>
           <span class="page-number">20</span>
         </section>
       </article>
