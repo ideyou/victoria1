@@ -2,17 +2,17 @@
   "id": "passaporte-da-victoria",
   "name": "Passaporte da Victoria",
   "short_name": "Passaporte",
-  "description": "Um passaporte visual com carimbos de cidades que a Victoria quer conhecer.",
+  "description": "Um passaporte interativo da Victoria com mapa, perfil e carimbos de cidades.",
   "scope": "./",
   "start_url": "./index.html",
   "display": "standalone",
   "orientation": "portrait",
-  "theme_color": "#6f1f25",
+  "theme_color": "#5f1420",
   "background_color": "#f7ead0",
   "categories": ["travel", "personalization"],
   "icons": [
     {
-      "src": "Profile.png",
+      "src": "profile.png",
       "sizes": "1254x1254",
       "type": "image/png",
       "purpose": "any maskable"

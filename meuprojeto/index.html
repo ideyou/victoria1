@@ -3,97 +3,282 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#6f1f25">
-  <meta name="description" content="Um passaporte visual com carimbos de cidades que a Victória quer conhecer.">
+  <meta name="theme-color" content="#5f1420">
+  <meta name="description" content="Um passaporte interativo da Victória com mapa, perfil e carimbos de cidades.">
   <title>Passaporte da Victória</title>
   <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="passport-shell" aria-label="Passaporte de viagens dos sonhos">
+  <main class="passport-shell" aria-label="Passaporte interativo da Victória">
     <section class="passport" aria-live="polite">
-      <article class="passport-page passport-cover active" data-page="1" aria-hidden="false">
-        <div class="passport-cover-photo">
-          <img src="Profile.png" alt="Foto de perfil da Victória Costa">
+      <article class="passport-page passport-cover active" data-page="0" aria-hidden="false">
+        <div class="cover-heading">
+          <p>UNIONE EUROPEA</p>
+          <p>REPUBBLICA ITALIANA</p>
         </div>
-        <p class="passport-eyebrow">Dream Cities</p>
-        <h1>Passaporte da Victória</h1>
-        <p>Abra para colecionar carimbos de cidades especiais.</p>
+        <img class="cover-emblem" src="repubblica-italiana.png" alt="Emblema della Repubblica Italiana">
+        <h1>PASSAPORTO</h1>
+        <div class="passport-chip" role="img" aria-label="Ícone de chip do passaporte"></div>
       </article>
 
-      <article class="passport-page city-page" data-page="2" aria-hidden="true" inert>
-        <div class="page-header">
-          <span>Destino 01</span>
-          <strong>Passaporte</strong>
-        </div>
-        <div class="city-drawing">
-          <svg viewBox="0 0 260 180" role="img" aria-labelledby="pisa-title">
-            <title id="pisa-title">Desenho da Torre de Pisa</title>
-            <path d="M97 151h86M117 37l49 8-17 107-49-8 17-107Z"/>
-            <path d="M111 73l48 8M107 100l48 8M102 127l48 8"/>
-            <path d="M120 49l42 7M116 61l42 7M112 87l42 7M108 114l42 7"/>
-            <path d="M75 151c12-14 27-19 45-11 12 5 23 5 34 0 15-7 28-3 39 11"/>
-          </svg>
-        </div>
-        <div class="stamp">
-          <span>Pisa</span>
-          <small>Carimbo da Cidade</small>
-        </div>
-        <h2>Pisa</h2>
-        <p>A página da torre inclinada, desenhada como lembrança de uma caminhada italiana.</p>
-        <a href="https://www.google.com/maps/place/Pisa,+It%C3%A1lia" target="_blank" rel="noreferrer">Ver no mapa</a>
+      <article class="passport-page passport-spread" data-page="1" aria-hidden="true" inert>
+        <section class="sheet left-sheet intro-page">
+          <header class="page-header">
+            <span>Unione Europea</span>
+            <strong>Pagina 01</strong>
+          </header>
+          <div class="world-map">
+            <svg viewBox="0 0 420 220" role="img" aria-labelledby="world-title">
+              <title id="world-title">Mapa mundi desenhado</title>
+              <path d="M65 79c18-31 55-42 91-35 17 4 25 18 15 31-13 16-39 11-50 26-8 11 1 27-11 38-14 12-46 4-55-17-5-12 2-28 10-43Z"/>
+              <path d="M165 128c18 3 31 12 36 29 4 13-1 28-13 35-15 9-32 1-39-14-8-17-1-37 16-50Z"/>
+              <path d="M225 55c23-17 69-23 96-8 25 15 13 42-12 45-20 2-26 12-18 25 8 12 32 12 40 29 8 18-14 34-35 31-22-3-23-24-39-34-15-10-38-3-48-18-14-21-3-55 16-70Z"/>
+              <path d="M337 124c26-2 42 15 35 35-7 19-36 23-50 8-13-14-3-39 15-43Z"/>
+              <path d="M34 188h353"/>
+            </svg>
+          </div>
+          <div class="dotted-number">VCT 04 25 777</div>
+          <div class="mrz">
+            <span>P&lt;ITA&lt;&lt;COSTA&lt;&lt;VICTORIA&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;</span>
+            <span>VCT0425777ITA2605257F3405257&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;08</span>
+          </div>
+          <span class="page-number">01</span>
+        </section>
+
+        <section class="sheet right-sheet identity-page">
+          <header class="page-header">
+            <span>Passaporto</span>
+            <strong>Pagina 02</strong>
+          </header>
+          <div class="identity-card">
+            <img src="profile.png" alt="Foto de perfil da Victória Costa">
+            <dl>
+              <div>
+                <dt>Nome</dt>
+                <dd>Victória Costa</dd>
+              </div>
+              <div>
+                <dt>Nacionalidade</dt>
+                <dd>Brasileira</dd>
+              </div>
+              <div>
+                <dt>Documento</dt>
+                <dd>Passaporte dos sonhos</dd>
+              </div>
+              <div>
+                <dt>Número</dt>
+                <dd>VCT 0425777</dd>
+              </div>
+              <div>
+                <dt>Autoridade</dt>
+                <dd>Ministério das Memórias</dd>
+              </div>
+              <div>
+                <dt>Missão</dt>
+                <dd>Colecionar cidades, cafés e histórias.</dd>
+              </div>
+            </dl>
+          </div>
+          <div class="signature">Victória Costa</div>
+          <span class="page-number">02</span>
+        </section>
       </article>
 
-      <article class="passport-page city-page" data-page="3" aria-hidden="true" inert>
-        <div class="page-header">
-          <span>Destino 02</span>
-          <strong>Passaporte</strong>
-        </div>
-        <div class="city-drawing">
-          <svg viewBox="0 0 260 180" role="img" aria-labelledby="paris-title">
-            <title id="paris-title">Desenho da Torre Eiffel</title>
-            <path d="M130 28l-49 124M130 28l49 124M101 103h58M90 129h80M114 67h32"/>
-            <path d="M112 152c8-26 14-57 18-92 4 35 10 66 18 92M73 152h114"/>
-            <path d="M56 152c19-13 39-16 60-9 12 4 24 4 37 0 22-7 39-4 51 9"/>
-          </svg>
-        </div>
-        <div class="stamp">
-          <span>Paris</span>
-          <small>Carimbo da Cidade</small>
-        </div>
-        <h2>Paris</h2>
-        <p>A página da Torre Eiffel, com traços simples para parecer um desenho de diário de viagem.</p>
-        <a href="https://www.google.com/maps/search/torre+eiffel/@48.8579422,2.2922547,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noreferrer">Ver no mapa</a>
+      <article class="passport-page passport-spread" data-page="2" aria-hidden="true" inert>
+        <section class="sheet left-sheet city-page" data-city="pisa">
+          <header class="page-header"><span>Itália</span><strong>Pagina 03</strong></header>
+          <div class="city-sketch"><span>Torre inclinada</span></div>
+          <div class="passport-stamp"><span>Pisa</span><small>Visitada</small></div>
+          <h2>Pisa</h2>
+          <p>A torre inclinada abre a parte de cidades com um traço clássico italiano.</p>
+          <button type="button" class="stamp-button" data-city="pisa" aria-pressed="false">Carimbar Pisa</button>
+          <span class="page-number">03</span>
+        </section>
+        <section class="sheet right-sheet city-page" data-city="roma">
+          <header class="page-header"><span>Itália</span><strong>Pagina 04</strong></header>
+          <div class="city-sketch"><span>Colosseo</span></div>
+          <div class="passport-stamp"><span>Roma</span><small>Visitada</small></div>
+          <h2>Roma</h2>
+          <p>Uma página de ruínas, fontes e ruas antigas no coração da Itália.</p>
+          <button type="button" class="stamp-button" data-city="roma" aria-pressed="false">Carimbar Roma</button>
+          <span class="page-number">04</span>
+        </section>
       </article>
 
-      <article class="passport-page city-page" data-page="4" aria-hidden="true" inert>
-        <div class="page-header">
-          <span>Destino 03</span>
-          <strong>Passaporte</strong>
-        </div>
-        <div class="city-drawing">
-          <svg viewBox="0 0 260 180" role="img" aria-labelledby="friburgo-title">
-            <title id="friburgo-title">Desenho de Friburgo</title>
-            <path d="M30 143l48-72 32 45 37-58 72 85H30Z"/>
-            <path d="M78 71l16 23 16-16M147 58l22 26 17-18"/>
-            <path d="M70 143v-31h38v31M82 143v-16h14v16M126 143v-44h48v44M139 143v-22h21v22"/>
-            <path d="M45 153h170"/>
-          </svg>
-        </div>
-        <div class="stamp">
-          <span>Friburgo</span>
-          <small>Carimbo da Cidade</small>
-        </div>
-        <h2>Friburgo</h2>
-        <p>A página das montanhas e casinhas, trazendo a sensação de cidade calma na Suíça.</p>
-        <a href="https://www.google.com/maps/place/Su%C3%AD%C3%A7a/@46.7956424,7.4103642,7.7z/data=!4m6!3m5!1s0x478c64ef6f596d61:0x5c56b5110fcb7b15!8m2!3d46.818188!4d8.227512!16zL20vMDZtenA?entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noreferrer">Ver no mapa</a>
+      <article class="passport-page passport-spread" data-page="3" aria-hidden="true" inert>
+        <section class="sheet left-sheet city-page" data-city="veneza">
+          <header class="page-header"><span>Itália</span><strong>Pagina 05</strong></header>
+          <div class="city-sketch"><span>Canal</span></div>
+          <div class="passport-stamp"><span>Veneza</span><small>Visitada</small></div>
+          <h2>Veneza</h2>
+          <p>Gôndolas, pontes e água desenhadas como um carimbo de filme.</p>
+          <button type="button" class="stamp-button" data-city="veneza" aria-pressed="false">Carimbar Veneza</button>
+          <span class="page-number">05</span>
+        </section>
+        <section class="sheet right-sheet city-page" data-city="florenca">
+          <header class="page-header"><span>Itália</span><strong>Pagina 06</strong></header>
+          <div class="city-sketch"><span>Duomo</span></div>
+          <div class="passport-stamp"><span>Florença</span><small>Visitada</small></div>
+          <h2>Florença</h2>
+          <p>Uma página para arte, cúpulas e o clima renascentista da Toscana.</p>
+          <button type="button" class="stamp-button" data-city="florenca" aria-pressed="false">Carimbar Florença</button>
+          <span class="page-number">06</span>
+        </section>
+      </article>
+
+      <article class="passport-page passport-spread" data-page="4" aria-hidden="true" inert>
+        <section class="sheet left-sheet city-page" data-city="brasilia">
+          <header class="page-header"><span>Brasil</span><strong>Pagina 07</strong></header>
+          <div class="city-sketch"><span>Catedral</span></div>
+          <div class="passport-stamp"><span>Brasília</span><small>Visitada</small></div>
+          <h2>Brasília</h2>
+          <p>Linhas modernas, céu grande e arquitetura de cartão postal brasileiro.</p>
+          <button type="button" class="stamp-button" data-city="brasilia" aria-pressed="false">Carimbar Brasília</button>
+          <span class="page-number">07</span>
+        </section>
+        <section class="sheet right-sheet city-page" data-city="buzios">
+          <header class="page-header"><span>Brasil</span><strong>Pagina 08</strong></header>
+          <div class="city-sketch"><span>Barcos</span></div>
+          <div class="passport-stamp"><span>Búzios</span><small>Visitada</small></div>
+          <h2>Búzios</h2>
+          <p>Mar, barcos e uma cidade praiana com cara de descanso.</p>
+          <button type="button" class="stamp-button" data-city="buzios" aria-pressed="false">Carimbar Búzios</button>
+          <span class="page-number">08</span>
+        </section>
+      </article>
+
+      <article class="passport-page passport-spread" data-page="5" aria-hidden="true" inert>
+        <section class="sheet left-sheet city-page" data-city="trancoso">
+          <header class="page-header"><span>Brasil</span><strong>Pagina 09</strong></header>
+          <div class="city-sketch"><span>Quadrado</span></div>
+          <div class="passport-stamp"><span>Trancoso</span><small>Visitada</small></div>
+          <h2>Trancoso</h2>
+          <p>Casinhas coloridas, praia e uma página com alma de verão.</p>
+          <button type="button" class="stamp-button" data-city="trancoso" aria-pressed="false">Carimbar Trancoso</button>
+          <span class="page-number">09</span>
+        </section>
+        <section class="sheet right-sheet city-page" data-city="frankfurt">
+          <header class="page-header"><span>Alemanha</span><strong>Pagina 10</strong></header>
+          <div class="city-sketch"><span>Skyline</span></div>
+          <div class="passport-stamp"><span>Frankfurt</span><small>Visitada</small></div>
+          <h2>Frankfurt</h2>
+          <p>Arranha-céus, pontes e um toque financeiro no passaporte.</p>
+          <button type="button" class="stamp-button" data-city="frankfurt" aria-pressed="false">Carimbar Frankfurt</button>
+          <span class="page-number">10</span>
+        </section>
+      </article>
+
+      <article class="passport-page passport-spread" data-page="6" aria-hidden="true" inert>
+        <section class="sheet left-sheet city-page" data-city="berlim">
+          <header class="page-header"><span>Alemanha</span><strong>Pagina 11</strong></header>
+          <div class="city-sketch"><span>Portão</span></div>
+          <div class="passport-stamp"><span>Berlim</span><small>Visitada</small></div>
+          <h2>Berlim</h2>
+          <p>História, arte urbana e o Portão de Brandemburgo em traços simples.</p>
+          <button type="button" class="stamp-button" data-city="berlim" aria-pressed="false">Carimbar Berlim</button>
+          <span class="page-number">11</span>
+        </section>
+        <section class="sheet right-sheet city-page" data-city="new-york">
+          <header class="page-header"><span>Estados Unidos</span><strong>Pagina 12</strong></header>
+          <div class="city-sketch"><span>Liberty</span></div>
+          <div class="passport-stamp"><span>NYC</span><small>Visitada</small></div>
+          <h2>New York</h2>
+          <p>Uma cidade vertical com luzes, pontes e ritmo de filme.</p>
+          <button type="button" class="stamp-button" data-city="new-york" aria-pressed="false">Carimbar New York</button>
+          <span class="page-number">12</span>
+        </section>
+      </article>
+
+      <article class="passport-page passport-spread" data-page="7" aria-hidden="true" inert>
+        <section class="sheet left-sheet city-page" data-city="los-angeles">
+          <header class="page-header"><span>Estados Unidos</span><strong>Pagina 13</strong></header>
+          <div class="city-sketch"><span>Hollywood</span></div>
+          <div class="passport-stamp"><span>LA</span><small>Visitada</small></div>
+          <h2>Los Angeles</h2>
+          <p>Sol, cinema e palmeiras numa página bem costa oeste.</p>
+          <button type="button" class="stamp-button" data-city="los-angeles" aria-pressed="false">Carimbar Los Angeles</button>
+          <span class="page-number">13</span>
+        </section>
+        <section class="sheet right-sheet city-page" data-city="londres">
+          <header class="page-header"><span>Reino Unido</span><strong>Pagina 14</strong></header>
+          <div class="city-sketch"><span>Big Ben</span></div>
+          <div class="passport-stamp"><span>Londres</span><small>Visitada</small></div>
+          <h2>Londres</h2>
+          <p>Chuva fina, relógio famoso e uma página de clássicos britânicos.</p>
+          <button type="button" class="stamp-button" data-city="londres" aria-pressed="false">Carimbar Londres</button>
+          <span class="page-number">14</span>
+        </section>
+      </article>
+
+      <article class="passport-page passport-spread" data-page="8" aria-hidden="true" inert>
+        <section class="sheet left-sheet city-page" data-city="edimburgo">
+          <header class="page-header"><span>Reino Unido</span><strong>Pagina 15</strong></header>
+          <div class="city-sketch"><span>Castelo</span></div>
+          <div class="passport-stamp"><span>Edimburgo</span><small>Visitada</small></div>
+          <h2>Edimburgo</h2>
+          <p>Castelo, pedra antiga e aquele clima de cidade misteriosa.</p>
+          <button type="button" class="stamp-button" data-city="edimburgo" aria-pressed="false">Carimbar Edimburgo</button>
+          <span class="page-number">15</span>
+        </section>
+        <section class="sheet right-sheet city-page" data-city="barcelona">
+          <header class="page-header"><span>Espanha</span><strong>Pagina 16</strong></header>
+          <div class="city-sketch"><span>Sagrada Família</span></div>
+          <div class="passport-stamp"><span>Barcelona</span><small>Visitada</small></div>
+          <h2>Barcelona</h2>
+          <p>Gaudí, mosaicos e uma página colorida mesmo em tinta de passaporte.</p>
+          <button type="button" class="stamp-button" data-city="barcelona" aria-pressed="false">Carimbar Barcelona</button>
+          <span class="page-number">16</span>
+        </section>
+      </article>
+
+      <article class="passport-page passport-spread" data-page="9" aria-hidden="true" inert>
+        <section class="sheet left-sheet city-page" data-city="lisboa">
+          <header class="page-header"><span>Portugal</span><strong>Pagina 17</strong></header>
+          <div class="city-sketch"><span>Elétrico</span></div>
+          <div class="passport-stamp"><span>Lisboa</span><small>Visitada</small></div>
+          <h2>Lisboa</h2>
+          <p>Azulejos, miradouros e o elétrico subindo pelas ladeiras.</p>
+          <button type="button" class="stamp-button" data-city="lisboa" aria-pressed="false">Carimbar Lisboa</button>
+          <span class="page-number">17</span>
+        </section>
+        <section class="sheet right-sheet city-page" data-city="moscou">
+          <header class="page-header"><span>Rússia</span><strong>Pagina 18</strong></header>
+          <div class="city-sketch"><span>Cúpulas</span></div>
+          <div class="passport-stamp"><span>Moscou</span><small>Visitada</small></div>
+          <h2>Moscou</h2>
+          <p>Cúpulas, inverno e uma cidade monumental para a coleção.</p>
+          <button type="button" class="stamp-button" data-city="moscou" aria-pressed="false">Carimbar Moscou</button>
+          <span class="page-number">18</span>
+        </section>
+      </article>
+
+      <article class="passport-page passport-spread" data-page="10" aria-hidden="true" inert>
+        <section class="sheet left-sheet city-page" data-city="toquio">
+          <header class="page-header"><span>Japão</span><strong>Pagina 19</strong></header>
+          <div class="city-sketch"><span>Tokyo Tower</span></div>
+          <div class="passport-stamp"><span>Tóquio</span><small>Visitada</small></div>
+          <h2>Tóquio</h2>
+          <p>Neon, templos e uma mistura linda de futuro com tradição.</p>
+          <button type="button" class="stamp-button" data-city="toquio" aria-pressed="false">Carimbar Tóquio</button>
+          <span class="page-number">19</span>
+        </section>
+        <section class="sheet right-sheet city-page" data-city="bangkok">
+          <header class="page-header"><span>Tailândia</span><strong>Pagina 20</strong></header>
+          <div class="city-sketch"><span>Templo</span></div>
+          <div class="passport-stamp"><span>Bangkok</span><small>Visitada</small></div>
+          <h2>Bangkok</h2>
+          <p>Templos dourados, mercados e energia asiática para fechar o roteiro.</p>
+          <button type="button" class="stamp-button" data-city="bangkok" aria-pressed="false">Carimbar Bangkok</button>
+          <span class="page-number">20</span>
+        </section>
       </article>
     </section>
 
     <nav class="passport-controls" aria-label="Controles do passaporte">
-      <button type="button" data-action="previous" disabled>Pagina anterior</button>
-      <span><strong data-page-number>1</strong> / 4</span>
-      <button type="button" data-action="next">Proxima pagina</button>
+      <button type="button" data-action="previous" disabled>Voltar</button>
+      <span><strong data-page-number>Capa</strong> / <span data-total-pages>20</span></span>
+      <button type="button" data-action="next">Abrir</button>
     </nav>
   </main>
 
