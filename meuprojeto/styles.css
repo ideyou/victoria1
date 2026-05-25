@@ -445,12 +445,12 @@ a {
   flex-direction: column;
   height: clamp(80px, 10vw, 112px);
   justify-content: center;
+  left: var(--stamp-x, 50%);
   opacity: 0;
   position: absolute;
-  right: clamp(20px, 3vw, 34px);
   text-align: center;
-  top: 42%;
-  transform: rotate(-12deg) scale(0.78);
+  top: var(--stamp-y, 42%);
+  transform: translate(-50%, -50%) rotate(-12deg) scale(0.78);
   transition: opacity 200ms ease, transform 200ms ease;
   width: clamp(80px, 10vw, 112px);
   z-index: 2;
@@ -479,7 +479,7 @@ a {
 
 .city-page.stamped .passport-stamp {
   opacity: 1;
-  transform: rotate(-12deg) scale(1);
+  transform: translate(-50%, -50%) rotate(-12deg) scale(1);
 }
 
 .page-number {
