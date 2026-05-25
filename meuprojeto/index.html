@@ -1,35 +1,101 @@
 <!DOCTYPE html>
-<html lang="pt-BR"
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Meu Linktree</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#6f1f25">
+  <meta name="description" content="Um passaporte visual com carimbos de cidades que a Victória quer conhecer.">
+  <title>Passaporte da Victória</title>
+  <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <main class="passport-shell" aria-label="Passaporte de viagens dos sonhos">
+    <section class="passport" aria-live="polite">
+      <article class="passport-page passport-cover active" data-page="1" aria-hidden="false">
+        <div class="passport-cover-photo">
+          <img src="Profile.png" alt="Foto de perfil da Victória Costa">
+        </div>
+        <p class="passport-eyebrow">Dream Cities</p>
+        <h1>Passaporte da Victória</h1>
+        <p>Abra para colecionar carimbos de cidades especiais.</p>
+      </article>
 
-    <div class="container text-center">
+      <article class="passport-page city-page" data-page="2" aria-hidden="true" inert>
+        <div class="page-header">
+          <span>Destino 01</span>
+          <strong>Passaporte</strong>
+        </div>
+        <div class="city-drawing">
+          <svg viewBox="0 0 260 180" role="img" aria-labelledby="pisa-title">
+            <title id="pisa-title">Desenho da Torre de Pisa</title>
+            <path d="M97 151h86M117 37l49 8-17 107-49-8 17-107Z"/>
+            <path d="M111 73l48 8M107 100l48 8M102 127l48 8"/>
+            <path d="M120 49l42 7M116 61l42 7M112 87l42 7M108 114l42 7"/>
+            <path d="M75 151c12-14 27-19 45-11 12 5 23 5 34 0 15-7 28-3 39 11"/>
+          </svg>
+        </div>
+        <div class="stamp">
+          <span>Pisa</span>
+          <small>Carimbo da Cidade</small>
+        </div>
+        <h2>Pisa</h2>
+        <p>A página da torre inclinada, desenhada como lembrança de uma caminhada italiana.</p>
+        <a href="https://www.google.com/maps/place/Pisa,+It%C3%A1lia" target="_blank" rel="noreferrer">Ver no mapa</a>
+      </article>
 
-        <img src="./Profile.png" alt="Foto" class="avatar">
+      <article class="passport-page city-page" data-page="3" aria-hidden="true" inert>
+        <div class="page-header">
+          <span>Destino 02</span>
+          <strong>Passaporte</strong>
+        </div>
+        <div class="city-drawing">
+          <svg viewBox="0 0 260 180" role="img" aria-labelledby="paris-title">
+            <title id="paris-title">Desenho da Torre Eiffel</title>
+            <path d="M130 28l-49 124M130 28l49 124M101 103h58M90 129h80M114 67h32"/>
+            <path d="M112 152c8-26 14-57 18-92 4 35 10 66 18 92M73 152h114"/>
+            <path d="M56 152c19-13 39-16 60-9 12 4 24 4 37 0 22-7 39-4 51 9"/>
+          </svg>
+        </div>
+        <div class="stamp">
+          <span>Paris</span>
+          <small>Carimbo da Cidade</small>
+        </div>
+        <h2>Paris</h2>
+        <p>A página da Torre Eiffel, com traços simples para parecer um desenho de diário de viagem.</p>
+        <a href="https://www.google.com/maps/search/torre+eiffel/@48.8579422,2.2922547,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noreferrer">Ver no mapa</a>
+      </article>
 
-        <h1 class="title">Victória Costa</h1>
+      <article class="passport-page city-page" data-page="4" aria-hidden="true" inert>
+        <div class="page-header">
+          <span>Destino 03</span>
+          <strong>Passaporte</strong>
+        </div>
+        <div class="city-drawing">
+          <svg viewBox="0 0 260 180" role="img" aria-labelledby="friburgo-title">
+            <title id="friburgo-title">Desenho de Friburgo</title>
+            <path d="M30 143l48-72 32 45 37-58 72 85H30Z"/>
+            <path d="M78 71l16 23 16-16M147 58l22 26 17-18"/>
+            <path d="M70 143v-31h38v31M82 143v-16h14v16M126 143v-44h48v44M139 143v-22h21v22"/>
+            <path d="M45 153h170"/>
+          </svg>
+        </div>
+        <div class="stamp">
+          <span>Friburgo</span>
+          <small>Carimbo da Cidade</small>
+        </div>
+        <h2>Friburgo</h2>
+        <p>A página das montanhas e casinhas, trazendo a sensação de cidade calma na Suíça.</p>
+        <a href="https://www.google.com/maps/place/Su%C3%AD%C3%A7a/@46.7956424,7.4103642,7.7z/data=!4m6!3m5!1s0x478c64ef6f596d61:0x5c56b5110fcb7b15!8m2!3d46.818188!4d8.227512!16zL20vMDZtenA?entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noreferrer">Ver no mapa</a>
+      </article>
+    </section>
 
-        <p class="subtitle">Viagens dos Sonhos</p>
-
-        <div class="links">
-
-      <a href="https://www.google.com/maps/place/Pisa,+It%C3%A1lia" 
-   class="btn" target="_blank">
-   Pisa - Itália
-</a>
-<a href="https://www.google.com/maps/search/torre+eiffel/@48.8579422,2.2922547,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D" class="btn" target="_blank">Paris - França </a>
-<a href="https://www.google.com/maps/place/Su%C3%AD%C3%A7a/@46.7956424,7.4103642,7.7z/data=!4m6!3m5!1s0x478c64ef6f596d61:0x5c56b5110fcb7b15!8m2!3d46.818188!4d8.227512!16zL20vMDZtenA?entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D" class="btn" target="_blank">Friburgo - Suiça</a>
-
-    </div>
-    <button class="btn btn-outline" onclick="toggleTheme()">
-      Alternar Tema
-    </button>
-
-  </div>
+    <nav class="passport-controls" aria-label="Controles do passaporte">
+      <button type="button" data-action="previous" disabled>Pagina anterior</button>
+      <span><strong data-page-number>1</strong> / 4</span>
+      <button type="button" data-action="next">Proxima pagina</button>
+    </nav>
+  </main>
 
   <script src="script.js"></script>
 </body>

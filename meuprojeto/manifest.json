@@ -1,19 +1,21 @@
 {
-  "id": "7WONDERS",
-  "name": "Victoria's Bucket List",
-  "short_name": "Victoria's Bucket List",
+  "id": "passaporte-da-victoria",
+  "name": "Passaporte da Victoria",
+  "short_name": "Passaporte",
+  "description": "Um passaporte visual com carimbos de cidades que a Victoria quer conhecer.",
   "scope": "./",
-  "start_url": "./",
+  "start_url": "./index.html",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#33CC66",
+  "orientation": "portrait",
+  "theme_color": "#6f1f25",
+  "background_color": "#f7ead0",
+  "categories": ["travel", "personalization"],
   "icons": [
     {
-      "src": "profile.png",
-      "sizes": "any",
-      "type": "image/avif"
+      "src": "Profile.png",
+      "sizes": "1254x1254",
+      "type": "image/png",
+      "purpose": "any maskable"
     }
-  ],
-  "app_name": "Victoria's Bucket List",
-  "description": "Meu checklist de lugares incríveis que quero conhecer! 🌍✨"
+  ]
 }
